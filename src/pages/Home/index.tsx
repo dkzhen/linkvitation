@@ -6,10 +6,14 @@ import { Review } from "../../components/organisms/Home/Review";
 import { ArticleHome } from "../../components/organisms/Home/Article";
 import { EmailSubs } from "../../components/organisms/Home/EmailSubs";
 import { Footer } from "../../components/organisms/Home/Footer";
+import { Navbar } from "../../components/organisms/Navbar";
 
 export const Home: React.FC = () => {
   return (
     <div className="h-[500vh] w-full ">
+      <div className="md:hidden">
+        <Navbar />
+      </div>
       <Hero />
       <div className="hidden md:block">
         <OurRecomendation />

@@ -6,7 +6,10 @@ function App(): JSX.Element {
   return (
     <BrowserRouter>
       <div>
-        <Navbar />
+        <div className="hidden md:block">
+          <Navbar />
+        </div>
+
         <Router />
       </div>
     </BrowserRouter>
