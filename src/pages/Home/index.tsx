@@ -10,7 +10,7 @@ import { Navbar } from "../../components/organisms/Navbar";
 
 export const Home: React.FC = () => {
   return (
-    <div className="h-[500vh] w-full overflow-x-hidden">
+    <div className="h-[500vh] w-full ">
       <Hero />
       <div className="hidden md:block">
         <OurRecomendation />
