@@ -35,7 +35,7 @@ export const Navbar: React.FC = () => {
             : colorNav
             ? "bg-green-1200/80 backdrop-blur-sm"
             : "bg-transparent"
-        } flex items-center justify-between px-9 mx-auto md:px-20 h-14 max-w-screen md:max-w-none md:h-24 fixed left-0  right-0 duration-200 ease-in-out z-30`}
+        } flex items-center justify-between px-5 mx-auto md:px-20 h-14 w-full md:max-w-none md:h-24 fixed md:left-0  md:right-0 duration-200 ease-in-out z-30`}
       >
         <Logo />
         <div
