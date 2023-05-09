@@ -9,7 +9,7 @@ import { Footer } from "../../components/organisms/Home/Footer";
 
 export const Home: React.FC = () => {
   return (
-    <div className="h-[500vh] w-full ">
+    <div className="h-[500vh] w-full justify-center md:justify-normal ">
       <Hero />
       <div className="hidden md:flex">
         <OurRecomendation />
