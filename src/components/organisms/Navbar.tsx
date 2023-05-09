@@ -35,14 +35,14 @@ export const Navbar: React.FC = () => {
             : colorNav
             ? "bg-green-1200/80 backdrop-blur-sm"
             : "bg-transparent"
-        } flex items-center justify-between px-20 h-14 md:h-24 fixed left-0 right-0 duration-200 ease-in-out z-30`}
+        } flex items-center justify-between px-5 md:px-20 h-14 md:h-24 fixed left-0  right-0 duration-200 ease-in-out z-30`}
       >
         <Logo />
         <div
           onClick={() => {
             showDropdownFunc();
           }}
-          className="flex flex-col gap-1 md:hidden cursor-pointer translate-x-[40px] md:translate-x-0"
+          className="flex flex-col gap-1 md:hidden cursor-pointer "
         >
           <span className="w-10 h-1 bg-white rounded-full"></span>
           <span className="w-10 h-1 bg-white rounded-full"></span>
