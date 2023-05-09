@@ -6,7 +6,7 @@ function App(): JSX.Element {
   return (
     <BrowserRouter>
       <div>
-        <div className="">
+        <div className="overflow-x-hidden">
           <Navbar />
         </div>
 
