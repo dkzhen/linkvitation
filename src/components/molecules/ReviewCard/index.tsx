@@ -20,7 +20,7 @@ export const ReviewCard: React.FC<PropsReviewImage & Props> = ({
   alt,
 }) => {
   return (
-    <div className="relative min-h-[600px]">
+    <div className="pl-3 relative min-h-[600px]">
       <ReviewImage source={source} alt={alt} />
       <ReviewText
         title={title}

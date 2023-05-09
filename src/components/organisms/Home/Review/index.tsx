@@ -4,6 +4,8 @@ import { SectionTitle } from "../../../atoms/SectionTitle";
 import { ReviewCard } from "../../../molecules/ReviewCard";
 import { reviews } from "../../../../data";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export const Review: React.FC = (e) => {
   useEffect(() => {
@@ -14,30 +16,32 @@ export const Review: React.FC = (e) => {
       <SectionCategory display="flex-col gap-2">See Our Review</SectionCategory>
       <SectionTitle>What Our User Say About Us</SectionTitle>
       <div className="flex w-full px-10 mt-8 gap-12 overflow-x-scroll no-scrollbar scrollbar-hide">
-        <button
-          id="left"
-          className="arrow-button bg-green-1200 w-12 h-12 rounded-full absolute z-10 flex items-center justify-center left-14 bottom-96 opacity-20 duration-150 hover:opacity-100"
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={2}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+          className="relative flex flex-col items-center pt-36"
         >
-          <FiChevronLeft size={22} color="#ffffff" />
-        </button>
-        <button className="arrow-button bg-green-1200 w-12 h-12 rounded-full absolute z-10 flex items-center justify-center right-14 bottom-96 opacity-20 duration-150 hover:opacity-100">
-          <FiChevronRight size={22} color="#ffffff" />
-        </button>
-
-        {reviews.map(({ id, image, content, reviewer }) => (
-          <ReviewCard
-            id="reviewCard"
-            key={id}
-            source={image.src}
-            alt={image.alt}
-            title={content.title}
-            subtitle={content.subtitle}
-            customerAvatar={reviewer.picture.src}
-            customerName={reviewer.name}
-            profession={reviewer.profession}
-            rating={reviewer.rating}
-          />
-        ))}
+          <div>
+            {reviews.map(({ id, image, content, reviewer }) => (
+              <SwiperSlide>
+                <ReviewCard
+                  id="reviewCard"
+                  key={id}
+                  source={image.src}
+                  alt={image.alt}
+                  title={content.title}
+                  subtitle={content.subtitle}
+                  customerAvatar={reviewer.picture.src}
+                  customerName={reviewer.name}
+                  profession={reviewer.profession}
+                  rating={reviewer.rating}
+                />
+              </SwiperSlide>
+            ))}
+          </div>
+        </Swiper>
       </div>
     </div>
   );

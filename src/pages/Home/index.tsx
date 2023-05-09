@@ -11,21 +11,21 @@ import { HeroMobile } from "../../components/organisms/mobile/HeroMobile";
 
 export const Home: React.FC = () => {
   return (
-    <div className="h-[500vh] w-full overflow-hidden ">
-      <div className="hidden md:block">
+    <div className="h-[500vh] w-full  ">
+      <div className="hidden lg:block">
         <Hero />
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <OurRecomendation />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <ReadyToSell />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block overflow-x-scroll">
         <Review />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <EmailSubs />
       </div>
       <div className="md:hidden">

@@ -7,14 +7,12 @@ import { HeroLeft } from "../../../molecules/HeroLeft";
 
 export const Hero: React.FC = () => {
   return (
-    <div className="w-full h-screen justify-center md:justify-none bg-cover bg-no-repeat overflow-hidden bg-white">
-      <div className="flex flex-col md:flex-row h-full w-screen md:w-full">
-        <div className="">
-          <BlurImage />
-        </div>
+    <div className="w-full h-screen bg-cover bg-no-repeat bg-white">
+      <div className="flex flex-col md:flex-row h-full w-full">
+        <BlurImage />
         <HeroLeft />
         <div
-          className="right w-1/2 rounded-bl-[80px] h-full hidden md:flex relative  no-scrollbar scrollbar-hide bg-no-repeat"
+          className="right w-1/2 rounded-bl-[80px] h-full hidden md:flex relative overflow-x-scroll no-scrollbar scrollbar-hide bg-no-repeat"
           style={{ backgroundImage: `url(${HeroBG})` }}
         ></div>
       </div>
