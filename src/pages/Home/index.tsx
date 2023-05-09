@@ -11,11 +11,20 @@ export const Home: React.FC = () => {
   return (
     <div className="h-[500vh] w-full ">
       <Hero />
-      <OurRecomendation />
-      <ReadyToSell />
-      <Review />
-      <EmailSubs />
-      <Footer />
+      <div className="hidden md:flex">
+        <OurRecomendation />
+      </div>
+      <div className="hidden md:flex">
+        <ReadyToSell />
+      </div>
+      <div className="hidden md:flex">
+        <Review />
+      </div>
+      <div className="hidden md:flex">
+        <EmailSubs />
+      </div>
+
+      {/* <Footer /> */}
     </div>
   );
 };
