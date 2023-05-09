@@ -7,7 +7,7 @@ import { ArticleHome } from "../../components/organisms/Home/Article";
 import { EmailSubs } from "../../components/organisms/Home/EmailSubs";
 import { Footer } from "../../components/organisms/Home/Footer";
 import { Navbar } from "../../components/organisms/Navbar";
-import HeroMobile from "../../components/organisms/mobile/HeroMobile";
+import { HeroMobile } from "../../components/organisms/mobile/HeroMobile";
 
 export const Home: React.FC = () => {
   return (
