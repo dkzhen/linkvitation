@@ -5,7 +5,7 @@ export const Logo: React.FC = () => {
   return (
     <div
       onClick={() => navigate("/")}
-      className="flex items-center gap-2 cursor-pointer"
+      className="flex items-center gap-2 cursor-pointer -translate-x-20 px-5 md:px-0 md:-translate-x-0"
     >
       <div>
         <svg

@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
           onClick={() => {
             showDropdownFunc();
           }}
-          className="flex flex-col gap-1 md:hidden cursor-pointer"
+          className="flex flex-col gap-1 md:hidden cursor-pointer translate-x-[40px] md:translate-x-0"
         >
           <span className="w-10 h-1 bg-white rounded-full"></span>
           <span className="w-10 h-1 bg-white rounded-full"></span>
