@@ -7,7 +7,7 @@ import { HeroLeft } from "../../../molecules/HeroLeft";
 
 export const Hero: React.FC = () => {
   return (
-    <div className="w-full h-screen justify-center md:justify-none bg-cover bg-no-repeat overflow-x-hidden bg-white">
+    <div className="w-full h-screen justify-center md:justify-none bg-cover bg-no-repeat overflow-hidden bg-white">
       <div className="flex flex-col md:flex-row h-full w-screen md:w-full">
         <div className="">
           <BlurImage />
