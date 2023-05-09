@@ -14,7 +14,6 @@ export const Home: React.FC = () => {
       <OurRecomendation />
       <ReadyToSell />
       <Review />
-
       <EmailSubs />
       <Footer />
     </div>

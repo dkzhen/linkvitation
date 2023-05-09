@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import HeroBG from "../../../assets/hero-bg.png";
 export const HeroLeft: React.FC = () => {
   const [texts, setTexts] = useState<string>("");
   const searching = (event: React.FormEvent) => {
@@ -9,18 +9,21 @@ export const HeroLeft: React.FC = () => {
   };
 
   return (
-    <div className="left flex flex-col justify-center h-full md:w-1/2 w-full z-10 pt-7 md:pt-10  md:pl-20">
-      <h1 className="capitalize font-bold text-sm md:text-4xl md:w-[60%] px-5 text-primary-800 md:mb-7 mb-3">
+    <div className="px-5 left flex flex-col md:justify-center h-full md:w-1/2 w-screen z-10  md:pt-10 pt-16 md:pl-20">
+      <div
+        className=" rounded-bl-[60px] h-2/4 w-full  md:hidden flex  overflow-x-scroll no-scrollbar scrollbar-hide bg-no-repeat mb-5"
+        style={{ backgroundImage: `url(${HeroBG})` }}
+      ></div>
+      <h1 className="capitalize font-bold text-[20px] md:text-4xl md:w-[60%]  text-primary-800 md:mb-7 ">
         Share your invitation to any location with LinkVitation
       </h1>
-      <p className="px-5 text-primary-600 text-[10px] mb-7 md:w-[70%]">
+      <p className=" text-primary-600 text-[13px] mb-10 md:mb-7 md:w-[70%]">
         Everything you need about finding your place to live will be here, where
         it will be easier for you
       </p>
-
-      <div>
-        <p className="text-primary-400">Our Partnership</p>
-        <div className="flex items-center justify-start gap-4">
+      <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
+        <p className="text-primary-400 text-[19px]">Our Partnership</p>
+        <div className="flex  flex-wrap md:flex-none justify-center space-x-4 md:space-x-0 gap-0 md:gap-4 ">
           <img src="https://househunter.vercel.app/traveloka.png" alt="" />
           <img src="https://househunter.vercel.app/tiket.png" alt="" />
           <img src="https://househunter.vercel.app/airbnb.png" alt="" />
