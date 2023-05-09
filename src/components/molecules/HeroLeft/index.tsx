@@ -11,7 +11,7 @@ export const HeroLeft: React.FC = () => {
   return (
     <div className="px-5 left flex flex-col justify-center md:justify-center h-full md:w-1/2 w-screen md:z-10  md:pt-10 pt-16 md:pl-20">
       <div
-        className=" rounded-bl-[60px] h-2/4 w-full  md:hidden flex  overflow-x-scroll no-scrollbar scrollbar-hide bg-no-repeat mb-5 "
+        className=" rounded-bl-[60px] h-2/4 w-full  md:hidden flex  overflow-x-hidden no-scrollbar scrollbar-hide bg-no-repeat mb-5 "
         style={{ backgroundImage: `url(${HeroBG})` }}
       ></div>
       <h1 className="capitalize font-bold text-[20px] md:text-4xl md:w-[60%]  text-primary-800 md:mb-7 ">
