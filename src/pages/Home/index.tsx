@@ -9,18 +9,18 @@ import { Footer } from "../../components/organisms/Home/Footer";
 
 export const Home: React.FC = () => {
   return (
-    <div className="h-[500vh] w-full justify-center md:justify-normal ">
+    <div className="h-[500vh] w-full ">
       <Hero />
-      <div className="hidden md:flex">
+      <div className="hidden md:block">
         <OurRecomendation />
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden md:block">
         <ReadyToSell />
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden md:block">
         <Review />
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden md:block">
         <EmailSubs />
       </div>
 
