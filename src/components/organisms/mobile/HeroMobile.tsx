@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeroBG from "../../../assets/hero-bg.png";
+import { BlurImage } from "../../atoms/BlurImageHero";
 export const HeroMobile: React.FC = () => {
   const [texts, setTexts] = useState<string>("");
   const searching = (event: React.FormEvent) => {
@@ -13,22 +14,15 @@ export const HeroMobile: React.FC = () => {
       <div className="  h-[400px]   w-full  md:hidden flex  mb-5 ">
         <img className="object-cover rounded-bl-[60px]" src={HeroBG} alt="" />
       </div>
-      <h1 className="capitalize font-bold text-[20px] md:text-4xl md:w-[60%]  text-primary-800 md:mb-7 ">
+
+      <h1 className="capitalize font-bold text-[20px] md:text-4xl md:w-[60%]  text-primary-800 md:mb-7 mb-5">
         Share your invitation to any location with LinkVitation
       </h1>
-      <p className=" text-primary-600 text-[13px] mb-10 md:mb-7 md:w-[70%]">
+
+      <p className=" text-primary-600 text-[15px] mb-10 md:mb-7 md:w-[70%]">
         Everything you need about finding your place to live will be here, where
         it will be easier for you
       </p>
-      <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
-        <p className="text-primary-400 text-[19px]">Our Partnership</p>
-        <div className="flex  flex-wrap md:flex-none justify-center space-x-4 md:space-x-0 gap-0 md:gap-4 ">
-          <img src="https://househunter.vercel.app/traveloka.png" alt="" />
-          <img src="https://househunter.vercel.app/tiket.png" alt="" />
-          <img src="https://househunter.vercel.app/airbnb.png" alt="" />
-          <img src="https://househunter.vercel.app/trip-advisor.png" alt="" />
-        </div>
-      </div>
     </div>
   );
 };
