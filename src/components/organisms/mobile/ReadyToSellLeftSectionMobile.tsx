@@ -1,7 +1,4 @@
 import React from "react";
-import { SectionCategory } from "../../atoms/SectionCategory";
-import { SectionTitle } from "../../atoms/SectionTitle";
-import { IoBed } from "react-icons/io5";
 import { GiHomeGarage, GiBathtub, GiStairs } from "react-icons/gi";
 
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -20,7 +17,7 @@ export const ReadyToSellLeftSectionMobile: React.FC = () => {
         </p>
         <div className="px-5 py-[6px] rounded-full bottom-10 left-3 flex items-center gap-2 bg-[#FEE2E2] text-[#EF4444]">
           <AiFillFire />
-          <p>Reguler</p>
+          <p>Standard</p>
         </div>
       </div>
       <h2

@@ -6,7 +6,7 @@ interface Props {
 }
 export const FooterInfo: React.FC<Props> = ({ infoTitle, children }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-10">
       <h4 className="text-primary-900 font-semibold text-lg mb-4">
         {infoTitle}
       </h4>

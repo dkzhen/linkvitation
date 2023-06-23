@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
         <BlurImage />
         <HeroLeft />
         <div
-          className="right w-1/2 rounded-bl-[80px] h-full hidden md:flex relative overflow-x-scroll no-scrollbar scrollbar-hide bg-no-repeat"
+          className="right w-1/2 rounded-bl-[80px] h-full hidden md:flex relative overflow-x-scroll no-scrollbar scrollbar-hide bg-no-repeat "
           style={{ backgroundImage: `url(${HeroBG})` }}
         ></div>
       </div>

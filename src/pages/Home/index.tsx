@@ -8,10 +8,11 @@ import { EmailSubs } from "../../components/organisms/Home/EmailSubs";
 import { Footer } from "../../components/organisms/Home/Footer";
 import { HeroMobile } from "../../components/organisms/mobile/HeroMobile";
 import Partnership from "../../components/organisms/mobile/Partnership";
+import { OurRecomendationMobile } from "../../components/organisms/mobile/OurRecomendationMobile";
 
 export const Home: React.FC = () => {
   return (
-    <div className="lg:h-[500vh]  w-full  ">
+    <div className="  w-full  ">
       <div className="hidden lg:block">
         <Hero />
       </div>
@@ -31,6 +32,9 @@ export const Home: React.FC = () => {
       <div className="md:hidden">
         <HeroMobile />
       </div>
+      <div className="md:hidden">
+        <OurRecomendationMobile />
+      </div>
 
       <div className=" md:hidden">
         <ReadyToSellMobile />
@@ -39,7 +43,7 @@ export const Home: React.FC = () => {
         <Partnership />
       </div>
 
-      <div className="hidden lg:block">
+      <div className="block">
         <Footer />
       </div>
     </div>

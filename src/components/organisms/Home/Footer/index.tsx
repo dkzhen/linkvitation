@@ -1,41 +1,35 @@
 import React from "react";
 import { Logo } from "../../../atoms/Logo";
-import { HashLink } from "react-router-hash-link";
-
 import { BlurImageFooter } from "../../../atoms/BlurImageFooter";
 import { SocialMediaFooter } from "../../../molecules/SocialMediaFooter";
 import { FooterInfo } from "../../../molecules/FooterInfo";
 
 export const Footer: React.FC = () => {
   return (
-    <div className="relative flex px-20 mt-32 h-80 pt-10">
+    <div className="relative flex flex-col items-start justify-between px-6 md:flex-row md:px-20 mt-12  md:mt-16 h-auto jus md:h-80 pt-10">
       <BlurImageFooter />
-      <div className="flex flex-col items-start md:w-[40%]">
+      {/* <div>HAlo</div>
+      <div>Halow</div> */}
+      <div className="flex flex-col w-full md:w-2/5">
         <Logo />
-        <p className="text-primary-400 leading-7 mt-5 md:w-[80%]">
-          We provide information about properties such as houses, villas and
-          apartments to help people find their dream home
+        <p className="text-primary-400 leading-7 mt-5 ">
+          Share Your Invitation To Any Location With LinkVitation.
         </p>
-        <SocialMediaFooter />
+        <p className="text-primary-400 leading-7  ">
+          {" "}
+          We provide digital invitation creation for the wedding you want.
+        </p>
+        <p className="text-primary-400 leading-7  ">
+          {" "}
+          Immediately place an order for your special wedding!
+        </p>
       </div>
-      <div className="flex md:gap-32">
-        <FooterInfo infoTitle="Property">
-          <HashLink to={"/#recommendation"} smooth>
-            House
-          </HashLink>
-          <HashLink to={"/#recommendation"} smooth>
-            Villa
-          </HashLink>
-          <HashLink to={"/#recommendation"} smooth>
-            Apartment
-          </HashLink>
+      <div className="">
+        <FooterInfo infoTitle="Social Media">
+          <SocialMediaFooter />
         </FooterInfo>
-        <FooterInfo infoTitle="Article">
-          <p>New Article</p>
-          <p>Popular Article</p>
-          <p>Most Read</p>
-          <p>Tips & Tricks</p>
-        </FooterInfo>
+      </div>
+      <div className="flex flex-col md:flex-row pb-8 md:pb-0 ">
         <FooterInfo infoTitle="Contact">
           <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
           <p>(671) 555-0110</p>
