@@ -135,7 +135,7 @@ export const PropertyDropdown2: React.FC<Props3> = ({
   const navigate = useNavigate();
 
   return (
-    <div className="bg-green-300 rounded-xl w-36 h-40 fixed top-20 right-40 flex flex-col items-start justify-center gap-1 p-2 z-30">
+    <div className="bg-green-300 rounded-xl w-36 h-48 fixed top-20 right-40 flex flex-col items-start justify-center gap-1 p-2 z-30">
       <Link
         to={"/#recommendation"}
         smooth
