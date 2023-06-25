@@ -145,7 +145,7 @@ export const PropertyDropdown2: React.FC<Props3> = ({
         }}
         className="hover:bg-green-1200 text-green-1300 hover:text-white w-full py-2 px-2 rounded-xl cursor-pointer"
       >
-        House
+        Standard
       </Link>
       <Link
         to={"/#recommendation"}
@@ -156,7 +156,7 @@ export const PropertyDropdown2: React.FC<Props3> = ({
         }}
         className="hover:bg-green-1200 text-green-1300 hover:text-white w-full py-2 px-2 rounded-xl cursor-pointer"
       >
-        Villa
+        Deluxe
       </Link>
       <Link
         to={"/#recommendation"}
@@ -168,7 +168,19 @@ export const PropertyDropdown2: React.FC<Props3> = ({
         }}
         className="hover:bg-green-1200 text-green-1300 hover:text-white w-full py-2 px-2 rounded-xl cursor-pointer"
       >
-        Apartment
+        Best Deals
+      </Link>
+      <Link
+        to={"/#recommendation"}
+        smooth
+        onClick={() => {
+          navigate("/#recommendation");
+          // navigate("/");
+          setShowPropertyDropDown2(!showPropertyDropDown2);
+        }}
+        className="hover:bg-green-1200 text-green-1300 hover:text-white w-full py-2 px-2 rounded-xl cursor-pointer"
+      >
+        Premium
       </Link>
     </div>
   );
