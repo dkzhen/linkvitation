@@ -3,7 +3,6 @@ import { ImageCard } from "../../atoms/FeaturedImageCard";
 import { TitleCard } from "../../atoms/FeaturedTitleCard";
 import { PriceCard } from "../../atoms/FeaturedPriceCard";
 import { featureCards } from "../../../data";
-import { SectionTitle } from "../../atoms/SectionTitle";
 
 interface Props {
   active: string;
@@ -41,7 +40,7 @@ export const FeaturedCard: React.FC<Props> = ({ active, setActive }) => {
   );
 
   return (
-    <div className="flex flex-wrap  overflow-x-auto scrollbar-hide no-scrollbar -z-50">
+    <div className="flex flex-wrap  overflow-x-auto scrollbar-hide no-scrollbar ">
       {filteredCategory.length !== 0 ? (
         filteredCategory?.map(
           ({ id, image, name, price, demo, preferences }) => (
