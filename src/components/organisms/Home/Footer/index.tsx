@@ -31,9 +31,9 @@ export const Footer: React.FC = () => {
       </div>
       <div className="flex flex-col md:flex-row pb-8 md:pb-0 ">
         <FooterInfo infoTitle="Contact">
-          <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
-          <p>(671) 555-0110</p>
-          <p>info@hounter.com</p>
+          <p>Kota Pekalongan , Indonesia </p>
+          <p>(082) 5525-0110</p>
+          <p>rsvp@Linkvitation.com</p>
         </FooterInfo>
       </div>
     </div>
