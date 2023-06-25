@@ -1,4 +1,4 @@
-const linkComingsoon = '../utils/comingsoon/index.html'
+const linkComingsoon = '/utils/comingsoon/index.html'
 export const reviews = [
   {
     id: 1,
