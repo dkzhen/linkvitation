@@ -29,7 +29,7 @@ export const DropdownNav: React.FC<Props> = ({
         <div className="bg-green-300 rounded-xl w-36 h-40 fixed top-16 right-8 flex flex-col items-start justify-center gap-1 p-2">
           <p
             onClick={() => {
-              navigate("/about");
+              navigate("/");
               setShowDropdownNav(!showDropdownNav);
             }}
             className="hover:bg-green-1200 w-full py-2 px-2 rounded-xl cursor-pointer"
@@ -38,7 +38,7 @@ export const DropdownNav: React.FC<Props> = ({
           </p>
           <p
             onClick={() => {
-              navigate("/article");
+              navigate("/");
               setShowDropdownNav(!showDropdownNav);
             }}
             className="hover:bg-green-1200 w-full py-2 px-2 rounded-xl cursor-pointer"
@@ -49,7 +49,7 @@ export const DropdownNav: React.FC<Props> = ({
             onClick={() => setShowPropertyDropdown(!showPropertyDropdown)}
             className="flex items-center justify-between hover:bg-green-1200 w-full py-2 px-2 rounded-xl cursor-pointer"
           >
-            <p>Property</p>
+            <p>Product</p>
             <RiArrowDropDownLine size={24} />
           </div>
         </div>
@@ -74,7 +74,7 @@ const PropertyDropdown: React.FC<Props2> = ({
   const navigate = useNavigate();
 
   return (
-    <div className="bg-green-300 rounded-xl w-36 h-40 fixed top-60 right-20 flex flex-col items-start justify-center gap-1 p-2">
+    <div className="bg-green-300 rounded-xl w-36 h-48 fixed top-60 right-20 flex flex-col items-start justify-center gap-1 p-2">
       <Link
         to={"/#recommendation"}
         smooth
@@ -84,7 +84,7 @@ const PropertyDropdown: React.FC<Props2> = ({
         }}
         className="hover:bg-green-1200 w-full py-2 px-2 rounded-xl cursor-pointer"
       >
-        House
+        Standard
       </Link>
       <Link
         to={"/#recommendation"}
@@ -95,7 +95,7 @@ const PropertyDropdown: React.FC<Props2> = ({
         }}
         className="hover:bg-green-1200 w-full py-2 px-2 rounded-xl cursor-pointer"
       >
-        Villa
+        Deluxe
       </Link>
       <Link
         to={"/#recommendation"}
@@ -106,7 +106,18 @@ const PropertyDropdown: React.FC<Props2> = ({
         }}
         className="hover:bg-green-1200 w-full py-2 px-2 rounded-xl cursor-pointer"
       >
-        Apartment
+        Best Deals
+      </Link>
+      <Link
+        to={"/#recommendation"}
+        smooth
+        onClick={() => {
+          // navigate("/");
+          setShowDropdownNav(!showDropdownNav);
+        }}
+        className="hover:bg-green-1200 w-full py-2 px-2 rounded-xl cursor-pointer"
+      >
+        Premium
       </Link>
     </div>
   );

@@ -9,43 +9,50 @@ import { Footer } from "../../components/organisms/Home/Footer";
 import { HeroMobile } from "../../components/organisms/mobile/HeroMobile";
 import Partnership from "../../components/organisms/mobile/Partnership";
 import { OurRecomendationMobile } from "../../components/organisms/mobile/OurRecomendationMobile";
+import { Navbar } from "../../components/organisms/Navbar";
 
 export const Home: React.FC = () => {
   return (
-    <div className="  w-full  ">
-      <div className="hidden lg:block">
-        <Hero />
-      </div>
+    <>
+      <Navbar />
+      <div className="  w-full  ">
+        <div className="hidden lg:block">
+          <Hero />
+        </div>
 
-      <div className="hidden lg:block">
-        <OurRecomendation />
-      </div>
-      <div className="hidden lg:block">
-        <ReadyToSell />
-      </div>
-      <div className="hidden lg:block overflow-x-scroll">
-        <Review />
-      </div>
-      <div className="hidden lg:block">
-        <EmailSubs />
-      </div>
-      <div className="md:hidden">
-        <HeroMobile />
-      </div>
-      <div className="md:hidden">
-        <OurRecomendationMobile />
-      </div>
+        <div className="hidden lg:block">
+          <OurRecomendation />
+        </div>
+        <div className="hidden lg:block">
+          <ReadyToSell />
+        </div>
+        <div className="hidden ">
+          <Review />
+        </div>
+        {/* <div className="hidden lg:block overflow-x-scroll">
+          <Review />
+        </div> */}
+        <div className="hidden lg:block mt-20">
+          <EmailSubs />
+        </div>
+        <div className="md:hidden">
+          <HeroMobile />
+        </div>
+        <div className="md:hidden">
+          <OurRecomendationMobile />
+        </div>
 
-      <div className=" md:hidden">
-        <ReadyToSellMobile />
-      </div>
-      <div className=" md:hidden">
-        <Partnership />
-      </div>
+        <div className=" md:hidden">
+          <ReadyToSellMobile />
+        </div>
+        <div className=" md:hidden">
+          <Partnership />
+        </div>
 
-      <div className="block">
-        <Footer />
+        <div className="block">
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 };

@@ -2,39 +2,42 @@ import React from "react";
 import { SectionCategory } from "../../atoms/SectionCategory";
 import { SectionTitle } from "../../atoms/SectionTitle";
 import { IoBed } from "react-icons/io5";
-import { GiHomeGarage, GiBathtub, GiStairs } from "react-icons/gi";
+import { GiHomeGarage, GiBathtub, GiStairs, GiPresent } from "react-icons/gi";
 
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { PropertyDetail } from "../../atoms/PropertyDetail";
 import { GreenButton } from "../../atoms/GreenButton";
+import { IoMdPhotos } from "react-icons/io";
+import { HiHand, HiLocationMarker } from "react-icons/hi";
 
 export const ReadyToSellLeftSection: React.FC = () => {
   return (
     <div className="w-1/2">
       <SectionCategory>Ready to Sell!</SectionCategory>
-      <SectionTitle>Bagikan momen bahagiamu dengan mudah</SectionTitle>
+      <SectionTitle>Share Your Happy Moments Easily</SectionTitle>
       <p className="text-primary-600 text-base pl-12 w-[85%] mb-5">
-        Undangan yang telah didesain untuk menjadi undangan impian Anda!
+        An invitation that has been designed to be the invitation of your
+        dreams!
       </p>
       <p className="text-primary-800 font-semibold pl-12 mb-4">
-        Detail Undangan
+        Product Details
       </p>
       <div className="ml-12 flex flex-wrap gap-x-10 gap-y-4 border-b-2 w-[80%] border-[#F0F3FD] pb-8 mb-8">
         <PropertyDetail
-          unitIcon={<IoBed size={24} />}
-          children={"4 Bedrooms"}
+          unitIcon={<IoMdPhotos size={24} />}
+          children={"6 Pictures"}
         />
         <PropertyDetail
-          unitIcon={<GiBathtub size={24} />}
-          children={"2 Bathrooms"}
+          unitIcon={<HiHand size={24} />}
+          children={"1 Greeting"}
         />
         <PropertyDetail
-          unitIcon={<GiHomeGarage size={24} />}
-          children={"1 Carport"}
+          unitIcon={<HiLocationMarker size={24} />}
+          children={"1 Location "}
         />
         <PropertyDetail
-          unitIcon={<GiStairs size={24} />}
-          children={"2 Floors"}
+          unitIcon={<GiPresent size={24} />}
+          children={"1 Gift & Share"}
         />
       </div>
       <div className="flex items-center w-full ml-12">

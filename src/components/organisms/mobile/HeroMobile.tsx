@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import HeroBG from "../../../assets/hero-bg.png";
-import { BlurImage } from "../../atoms/BlurImageHero";
 export const HeroMobile: React.FC = () => {
   const [texts, setTexts] = useState<string>("");
   const searching = (event: React.FormEvent) => {

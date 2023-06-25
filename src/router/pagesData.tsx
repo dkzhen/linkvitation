@@ -14,17 +14,17 @@ export const pagesData: routerType[] = [
   {
     title: "About",
     path: "about",
-    element: <About />,
+    element: <Home />,
   },
   {
     title: "Order",
     path: "order",
-    element: <Order />,
+    element: <Home />,
   },
   {
     title: "Article",
     path: "article",
-    element: <Article />,
+    element: <Home />,
   },
   {
     title: "Signup",

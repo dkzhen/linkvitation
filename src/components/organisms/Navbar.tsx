@@ -53,7 +53,8 @@ export const Navbar: React.FC = () => {
             <div
               onClick={() => {
                 setActivePage("/about");
-                navigate("/about");
+                // navigate("/about");
+                navigate("/");
               }}
             >
               <NavLink
@@ -70,7 +71,8 @@ export const Navbar: React.FC = () => {
             <div
               onClick={() => {
                 setActivePage("/article");
-                navigate("/article");
+                navigate("/");
+                // navigate("/article");
               }}
             >
               <NavLink
@@ -98,7 +100,7 @@ export const Navbar: React.FC = () => {
                 }
                 colorNav={colorNav}
               >
-                Property
+                Product
               </NavLink>
             </div>
           </div>

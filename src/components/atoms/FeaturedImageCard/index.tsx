@@ -14,7 +14,7 @@ export const ImageCard: React.FC<Props> = ({ source, preferences, alt }) => {
         <img
           src={source}
           alt={alt}
-          className="w-full h-full hover:scale-110 duration-150"
+          className="w-full h-full border-green-1200 border-2 rounded-2xl hover:scale-110 duration-150"
         />
       </div>
       <Badge preferences={preferences} />

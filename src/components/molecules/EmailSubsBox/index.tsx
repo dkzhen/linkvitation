@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { SectionTitle } from "../../atoms/SectionTitle";
 import { SearchBox } from "../../atoms/SearchBox";
-// import { IoMail } from "react-icons/io5";
 import { AiFillMail } from "react-icons/ai";
 
 export const EmailSubsBox: React.FC = () => {
@@ -19,7 +18,7 @@ export const EmailSubsBox: React.FC = () => {
   return (
     <div className="relative w-full h-72 flex flex-col items-center justify-center rounded-2xl gradient-subs-email">
       <SectionTitle classname="w-[50%] text-center">
-        Subscribe For More Info and update from Hounter
+        Subscribe For More Info and update from Linkvitation
       </SectionTitle>
       <SearchBox
         onsubmitBro={subscribe}

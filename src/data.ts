@@ -1,3 +1,4 @@
+const linkComingsoon = '../utils/comingsoon/index.html'
 export const reviews = [
   {
     id: 1,
@@ -150,11 +151,12 @@ export const featureCards = [
   {
     id: 1,
     image: {
-      url: "house-1.jpg",
+      url: "wedding-standard.png",
       alt: "house-1",
     },
     name: "Standard Design ",
     price: 80000,
+    demo:"https://linkvitation-wedding-v1.vercel.app/order-v1",
     owner: {
       name: "Rheza",
       address: "Denpasar, Indonesia",
@@ -166,11 +168,12 @@ export const featureCards = [
   {
     id: 2,
     image: {
-      url: "roselands-house.png",
+      url: "wedding-premium.png",
       alt: "roselands-house",
     },
     name: "Coming Soon",
     price: 0,
+    demo:linkComingsoon,
     owner: {
       name: "Dianne Russell",
       address: "Manchester, Kentucky",
@@ -182,11 +185,12 @@ export const featureCards = [
   {
     id: 3,
     image: {
-      url: "woodlandside.png",
+      url: "wedding-bestdeal.png",
       alt: "woodlandside",
     },
     name: "Coming Soon",
     price: 0,
+    demo:linkComingsoon,
     owner: {
       name: "Robert Fox",
       address: "Dr. San Jose, South Dakota",
@@ -198,11 +202,12 @@ export const featureCards = [
   {
     id: 4,
     image: {
-      url: "theoldlighthouse.png",
+      url: "wedding-deluxe.png",
       alt: "theoldlighthouse",
     },
-    name: "Premium",
-    price: 55000000,
+    name: "Coming Soon",
+    price: 0,
+    demo:linkComingsoon,
     owner: {
       name: "Ronald Richards",
       address: "Santa Ana, Illinois",
@@ -210,54 +215,6 @@ export const featureCards = [
     },
     category: "House",
     preferences: "Premium",
-  },
-  {
-    id: 5,
-    image: {
-      url: "theoldlighthouse.png",
-      alt: "theoldlightvilla",
-    },
-    name: "The Old Light Villa",
-    price: 55000000,
-    owner: {
-      name: "Ronald Richards",
-      address: "Santa Ana, Illinois",
-      avatar: "ronald-richards.png",
-    },
-    category: "Villa",
-    preferences: "Popular",
-  },
-  {
-    id: 6,
-    image: {
-      url: "theoldlighthouse.png",
-      alt: "theoldlightvilla",
-    },
-    name: "The Old Light Apartment",
-    price: 55000000,
-    owner: {
-      name: "Ronald Richards",
-      address: "Santa Ana, Illinois",
-      avatar: "ronald-richards.png",
-    },
-    category: "Apartment",
-    preferences: "Popular",
-  },
-  {
-    id: 7,
-    image: {
-      url: "theoldlighthouse.png",
-      alt: "theoldlightvilla",
-    },
-    name: "The Old Light Apartment",
-    price: 55000000,
-    owner: {
-      name: "Ronald Richards",
-      address: "Santa Ana, Illinois",
-      avatar: "ronald-richards.png",
-    },
-    category: "Apartment",
-    preferences: "Best Deals",
   },
 ];
 export const carouselHero = [
