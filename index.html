@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script>
-        const favicon = document.querySelector('link[rel="icon"]');
-        const theme = document.documentElement.getAttribute("data-theme");
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const favicon = document.querySelector('link[rel="icon"]');
+      const theme = document.documentElement.getAttribute("data-theme");
 
-        // Tentukan path atau jalur favicon sesuai dengan mode yang aktif
-        const faviconPath =
-          theme === "dark" ? "icon-light.png" : "favicon-light.ico";
+      // Tentukan path atau jalur favicon sesuai dengan mode yang aktif
+      const faviconPath =
+        theme === "dark" ? "icon-light.png" : "icon-light.png";
 
-        // Ubah atribut href pada tag <link rel="icon"> dengan path favicon yang sesuai
-        favicon.setAttribute("href", faviconPath);
-      </script>
+      // Ubah atribut href pada tag <link rel="icon"> dengan path favicon yang sesuai
+      favicon.setAttribute("href", faviconPath);
+    </script>
 
-      <title>LinkVitation</title>
-    </head>
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
+    <title>LinkVitation</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
