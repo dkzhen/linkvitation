@@ -1,19 +1,25 @@
 import React from "react";
 import { SectionCategory } from "../../atoms/SectionCategory";
 import { SectionTitle } from "../../atoms/SectionTitle";
-import { IoBed } from "react-icons/io5";
-import { GiHomeGarage, GiBathtub, GiStairs, GiPresent } from "react-icons/gi";
-
+import { GiPresent } from "react-icons/gi";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { PropertyDetail } from "../../atoms/PropertyDetail";
 import { GreenButton } from "../../atoms/GreenButton";
 import { IoMdPhotos } from "react-icons/io";
 import { HiHand, HiLocationMarker } from "react-icons/hi";
+import { AiFillFire } from "react-icons/ai";
 
 export const ReadyToSellLeftSection: React.FC = () => {
   return (
     <div className="w-1/2">
-      <SectionCategory>Ready to Sell!</SectionCategory>
+      <div className="flex flex-row">
+        <SectionCategory>Ready to Sell!</SectionCategory>
+        <div className="ml-3 mb-2 px-5 py-[6px] rounded-full bottom-10 left-3 flex items-center gap-2 bg-[#FEE2E2] text-[#EF4444]">
+          <AiFillFire />
+          <p>Standard</p>
+        </div>
+      </div>
+
       <SectionTitle>Share Your Happy Moments Easily</SectionTitle>
       <p className="text-primary-600 text-base pl-12 w-[85%] mb-5">
         An invitation that has been designed to be the invitation of your
